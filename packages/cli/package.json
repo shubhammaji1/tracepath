@@ -1,0 +1,53 @@
+{
+  "name": "@tracepath/cli",
+  "version": "0.1.0",
+  "description": "Real-time terminal dashboard for Tracepath",
+  "keywords": [
+    "observability",
+    "tracing",
+    "cli",
+    "dashboard",
+    "terminal"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "tracepath": "./dist/bin.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@tracepath/core": "workspace:*",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "ink": "^4.4.1",
+    "react": "^18.2.0",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.55",
+    "@types/ws": "^8.5.10",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
