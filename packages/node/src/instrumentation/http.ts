@@ -1,5 +1,5 @@
-﻿import * as http from 'node:http'
-import * as https from 'node:https'
+import http from 'node:http'
+import https from 'node:https'
 import type { Tracer } from '@tracepath/core'
 import { SpanKind, SpanStatusCode, injectTraceContext } from '@tracepath/core'
 import { contextManager } from '../context-manager.js'
