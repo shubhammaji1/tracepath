@@ -39,7 +39,7 @@ importers:
   packages/browser:
     dependencies:
       '@tracepath/core':
-        specifier: workspace:*
+        specifier: ^0.1.2
         version: link:../core
     devDependencies:
       rimraf:
@@ -55,7 +55,7 @@ importers:
   packages/cli:
     dependencies:
       '@tracepath/core':
-        specifier: workspace:*
+        specifier: ^0.1.2
         version: link:../core
       chalk:
         specifier: ^5.3.0
@@ -110,7 +110,7 @@ importers:
   packages/node:
     dependencies:
       '@tracepath/core':
-        specifier: workspace:*
+        specifier: ^0.1.2
         version: link:../core
       express:
         specifier: '>=4.0.0'
